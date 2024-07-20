@@ -17,6 +17,7 @@ public class Exa2 {
         // TODO code application logic here++
         System.out.println("hola +++");
         System.out.println("Hola a Todos");
+        System.out.println("Hola --***--");
     }
     
 }
