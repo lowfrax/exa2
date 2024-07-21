@@ -37,7 +37,6 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -48,20 +47,20 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("CLAVE");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(310, 240, 90, 30);
+        jLabel1.setBounds(160, 230, 90, 30);
         jPanel1.add(jlbUser);
-        jlbUser.setBounds(310, 200, 260, 30);
+        jlbUser.setBounds(160, 190, 260, 30);
         jPanel1.add(jSeparator1);
-        jSeparator1.setBounds(310, 230, 260, 2);
+        jSeparator1.setBounds(160, 220, 260, 2);
         jPanel1.add(jSeparator2);
-        jSeparator2.setBounds(310, 300, 260, 2);
+        jSeparator2.setBounds(160, 290, 260, 2);
         jPanel1.add(jlbClave);
-        jlbClave.setBounds(310, 270, 260, 30);
+        jlbClave.setBounds(160, 260, 260, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("USUARIO:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(310, 170, 90, 30);
+        jLabel5.setBounds(160, 160, 90, 30);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("INICIAR SESION");
@@ -75,13 +74,6 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/logo-uth.png"))); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(120, 10, 370, 120);
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("LOGIN");
-        jLabel2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 4, 0, new javax.swing.ImageIcon(getClass().getResource("/imgs/franja.png")))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(110, 180, 131, 33);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -135,7 +127,6 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
