@@ -49,6 +49,7 @@ public class Horarios_CRUD extends javax.swing.JDialog {
         botEliminar = new javax.swing.JButton();
         botHome = new javax.swing.JButton();
         botLimpiar = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -60,9 +61,11 @@ public class Horarios_CRUD extends javax.swing.JDialog {
         jPanel1.setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Asignatura: ");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 84, 94, -1));
 
         jtblHorarios.setBackground(new java.awt.Color(204, 255, 204));
         jtblHorarios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -90,53 +93,67 @@ public class Horarios_CRUD extends javax.swing.JDialog {
             jtblHorarios.getColumnModel().getColumn(0).setResizable(false);
         }
 
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 84, 519, 417));
+
         jcbAsignatura.setDoubleBuffered(true);
         jcbAsignatura.setFocusable(false);
         jcbAsignatura.setRequestFocusEnabled(false);
+        jPanel2.add(jcbAsignatura, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 107, 228, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Catedratico:");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 133, 104, -1));
 
         jcbCatedratico.setDoubleBuffered(true);
         jcbCatedratico.setFocusable(false);
         jcbCatedratico.setRequestFocusEnabled(false);
+        jPanel2.add(jcbCatedratico, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 156, 228, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setText("Horarios Disponibles: ");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 182, -1, -1));
 
         jcbHorarios.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lunes - Jueves", "Viernes", "Sabado", "Domingo" }));
         jcbHorarios.setSelectedIndex(-1);
         jcbHorarios.setDoubleBuffered(true);
         jcbHorarios.setFocusable(false);
         jcbHorarios.setRequestFocusEnabled(false);
+        jPanel2.add(jcbHorarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 205, 228, -1));
 
         jcbHoraInicio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00" }));
         jcbHoraInicio.setDoubleBuffered(true);
         jcbHoraInicio.setFocusable(false);
         jcbHoraInicio.setRequestFocusEnabled(false);
+        jPanel2.add(jcbHoraInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 254, 228, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setText("Hora de Inicio: ");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 231, 121, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setText("Horario a Asignar: ");
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
 
         jtfHoras.setText(" ");
         jtfHoras.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jtfHoras.setEnabled(false);
+        jPanel2.add(jtfHoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 303, 228, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("HORARIOS");
         jLabel2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 4, 0, new javax.swing.ImageIcon(getClass().getResource("/imgs/franja.png")))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 238, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/logo-uth2.png"))); // NOI18N
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(594, 11, 226, -1));
 
         botCrear.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         botCrear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/crear.png"))); // NOI18N
         botCrear.setText("CREAR");
         botCrear.setBorderPainted(false);
         botCrear.setContentAreaFilled(false);
+        jPanel2.add(botCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 339, 120, 50));
 
         botActualizar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         botActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/actualizar.png"))); // NOI18N
@@ -144,111 +161,31 @@ public class Horarios_CRUD extends javax.swing.JDialog {
         botActualizar.setBorderPainted(false);
         botActualizar.setContentAreaFilled(false);
         botActualizar.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
+        jPanel2.add(botActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 339, -1, 50));
 
         botEliminar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         botEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/eliminar.png"))); // NOI18N
         botEliminar.setText("ELIMINAR");
         botEliminar.setBorderPainted(false);
         botEliminar.setContentAreaFilled(false);
+        jPanel2.add(botEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 399, 130, 50));
 
         botHome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         botHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/home.png"))); // NOI18N
         botHome.setText("HOME");
         botHome.setBorderPainted(false);
         botHome.setContentAreaFilled(false);
+        jPanel2.add(botHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 459, 260, 50));
 
         botLimpiar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         botLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/limpiar.png"))); // NOI18N
         botLimpiar.setText("LIMPIAR");
         botLimpiar.setBorderPainted(false);
         botLimpiar.setContentAreaFilled(false);
+        jPanel2.add(botLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 399, 120, 50));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jcbAsignatura, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jtfHoras)
-                                .addComponent(jcbHoraInicio, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jcbHorarios, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jcbCatedratico, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel6)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(0, 79, Short.MAX_VALUE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(botCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(botActualizar))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(botLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(botEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(botHome, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 14, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel14))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcbAsignatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcbCatedratico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcbHorarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcbHoraInicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jtfHoras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
-                        .addComponent(botHome, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 8, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/franja2.png"))); // NOI18N
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 830, 210));
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(20, 20, 830, 520);
@@ -323,14 +260,15 @@ public class Horarios_CRUD extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton botActualizar;
-    public javax.swing.JButton botCrear;
-    public javax.swing.JButton botEliminar;
-    public javax.swing.JButton botHome;
-    public javax.swing.JButton botLimpiar;
+    private javax.swing.JButton botActualizar;
+    private javax.swing.JButton botCrear;
+    private javax.swing.JButton botEliminar;
+    private javax.swing.JButton botHome;
+    private javax.swing.JButton botLimpiar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -343,7 +281,7 @@ public class Horarios_CRUD extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> jcbCatedratico;
     private javax.swing.JComboBox<String> jcbHoraInicio;
     private javax.swing.JComboBox<String> jcbHorarios;
-    public javax.swing.JTable jtblHorarios;
+    private javax.swing.JTable jtblHorarios;
     private javax.swing.JTextField jtfHoras;
     // End of variables declaration//GEN-END:variables
 }
