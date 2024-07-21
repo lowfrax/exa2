@@ -238,7 +238,7 @@ public class Catedraticos_CRUD extends javax.swing.JDialog {
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/fondo3.jpg"))); // NOI18N
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(0, 0, 870, 570);
+        jLabel13.setBounds(0, 0, 880, 570);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
