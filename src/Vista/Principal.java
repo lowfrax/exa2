@@ -35,6 +35,7 @@ public class Principal extends javax.swing.JDialog {
         botAsignatura = new javax.swing.JButton();
         botReporte = new javax.swing.JButton();
         botHorario = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -100,6 +101,10 @@ public class Principal extends javax.swing.JDialog {
         jPanel1.add(jPanel2);
         jPanel2.setBounds(20, 20, 520, 400);
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/fondo3.jpg"))); // NOI18N
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(0, 0, 870, 570);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -162,6 +167,7 @@ public class Principal extends javax.swing.JDialog {
     private javax.swing.JButton botHorario;
     private javax.swing.JButton botReporte;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
